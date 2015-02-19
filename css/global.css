@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	font-family: "monda";
+	font-size:1em;
+}
+
+header {
+	width: 78%;
+	height: 4em;
+	margin: 1em auto;
+	background-image:url(../img/Imtech_logo.jpg);
+	background-repeat:no-repeat;
+}
+
+#top a figure {
+	display: inline;
+}
+
+#login{
+	float:right;
+}
+
+.input{
+	position:relative;
+	display:inline;
+}
+
+#mainnav{
+	position:absolute;
+	width: 100%;
+	height: 3em;
+	/*background-image: url(../img/ui-navi.png);*/
+	background-color:#064885;
+	margin:0 auto;
+	z-index:-1;
+}
+
+#allign {
+	width: 78%;
+	height: 3em;
+	margin:0 auto;
+}
+
+nav #full {
+	position: absolute;
+	display:block;
+	width: 78%;
+	min-width:40em;
+	height:3em;
+	padding:0;
+	margin:0;
+}
+nav #small {
+	display:none;
+}
+
+nav ul li {
+	display:inline-block;
+	height:1.8em;
+	margin:0.4em 3%;
+}
+
+nav ul a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size:1.2em;
+}
+
+#searchwrap {
+	right:11%;
+	display:block;
+	position:absolute;
+	width:13em;
+	height:1.5em;
+	padding:0.7em;
+	margin-top:0.5em;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	background-image:url(../img/edit1.png);
+}
+
+input#searchfield{
+	width:8.3em;
+	height:1.3em;
+}
+
+input#searchbutton{
+	float:right;
+	display:block;
+	background-color:#064885;
+	color:hsla(0,0%,100%,1);
+	border:none;
+	overflow:hidden;
+	cursor:pointer;
+	height:1.5em;
+	width: 4em;
+	margin-top:2px;
+	
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+  
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+	background-color:#064885;
+	color:#FFFFFF;
+}
+
+
+#container {
+	width: 76%;
+	margin:0 auto;
+	padding: 1%;
+	overflow: auto;
+	background-image:url(../img/edit1.png);
+}
+
+.title{
+	color:#064885;
+	font-size:1.8em;
+}
+
+.blocks{
+	font-size:0.8em;
+	-webkit-border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	border-radius: 0.8em;
+	padding: 1%;
+	background-color:  #FFF/*hsla(218, 7%, 51%, 0.5)*/;
+	overflow:auto;
+}
+
+.blocks ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.blocks a{
+	font-size:1.2em;
+	color:#064885;
+	text-decoration:none;
+}
+
+div .userimg  {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:0.5em;
+}
+
+div .userimg img {
+	height: 50px;
+	width: 50px;
+}
+
+div .usertag {
+	display: inline-block;
+}
+div .usertag a {
+	height:3em;
+}
+	
+div .clientimg  {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:0.5em;
+}
+
+div .clientimg img {
+	height: 45px;
+	width: 45px;
+}
+
+div .clientname {
+	display: inline-block;
+}
+div .clientname a {
+	height:3em;
+}
+
+#filter{
+	float:left; 
+	width:15%;
+	min-height:25em;
+	margin:0 1% 0 0;
+}
+
+#tags2{
+	clear:left;
+	float:left; 
+	width:15%;
+	min-height:25em;
+	margin:1% 1% 0 0;
+}
+
+#key{
+	float:left;
+	width:50%;
+	height:auto;
+	margin:0 0% 1% 0  ;
+}
+
+#personen{
+	clear:right;
+	float:right;
+	width:27%;
+	height:25em;
+	min-height:20em;
+	margin-bottom:1%;
+}
+
+
+#projects{
+	clear:none;
+	float:right;
+	width:27%;
+	height:25em;
+	min-height:20em;
+}
+
+
+#companies{
+	clear:right;
+	float:right;
+	width:27%;
+	height:25em;
+	margin-top: 1%;
+}
+
+#content{
+	clear:none;
+	float:left;
+	position: relative;
+    top: -8em;
+	width:50%;
+	height:55em;
+	min-height:25em;
+}
+
+#itemlist .item {
+	background-image: url(../img/edit_back4.png);
+	background-repeat: repeat;
+	padding:2em;
+	margin-bottom: 2em;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	
+}
+
+.metablock{
+	display:block;
+	height:auto;
+	margin-bottom:1em;
+	background-image: none;
+	background-repeat:repeat;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.to{
+	margin:0 1em;
+	display: inline;
+	color: #064885;
+	text-decoration: none;
+	font-size:1.2em;
+	text-align:center;
+}
+
+.contentblock{
+	display:inline-block;
+	margin-bottom:1em;
+}
+
+div .comment{
+	margin: 0 0 1em 50px;
+}
+
+.commentblock{
+	display:inline-block;
+	background-image: none;
+	background-repeat:repeat;
+	-webkit-border-bottom-right-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+footer{
+	font-size:1.1em;
+	width: 78%;
+	height: 6em;
+	margin:0.5em auto;
+	color: hsla(0,0%,100%,1);
+}
+
+.foot {
+	float: left;
+	display: inline-block;  
+	width: 21%;
+	height: 4em;
+	padding: 2%;
+	text-align:center;
+	background-image:url(../img/edit1.png);
+	color: #064885;
+}
+
+.ulfoot {
+	list-style-type: none;
+	font-size:0.8em;
+	margin:0;
+	padding:0;
+}
+
+#long{
+	width: 96%;
+	height: 2em;
+	float:left;
+	padding:0.5em 2% 0;
+	background-color: #064885;
+	color:#FFFFFF;
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+#mainnav{
+	background-color:#FF3333
+}
+
+#filter{
+	display:none;
+}
+
+#tags2{
+	display:none;
+}
+
+nav ul li {
+	margin:0.4em 2%;
+}
+
+#key{
+	width:65%;
+	margin-right:1%;
+}
+
+#content{
+	width:65%;
+	margin-right:1%;
+	top: 0em;
+}
+
+#personen{ 
+	clear:none;
+	float:right;
+	width:30%;
+}
+
+#projects{ 
+	clear:right;
+	float:right;
+	width:30%;
+}
+
+#companies{ 
+	clear:right;
+	float:right;
+	width:30%;
+}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	
+#mainnav {
+	background:#FFCC00;
+}
+
+nav ul li {
+	margin:0.4em 1%;
+}
+
+.blocks ul {
+	list-style-type: circle;
+	list-style-position:inside;
+}
+
+.blocks img {
+	display:none;
+}
+
+#key{
+	width:98%;
+}
+#personen{
+	float:left;
+	clear:right;
+	width:30%;
+	height:25em;
+	min-height:10em;
+	margin: 0 1% 1% 0;
+}
+
+#projects{
+	float:left;
+	clear:right;
+	width:32%;
+	height:25em;
+	min-height:10em;
+	margin: 0 1% 1% 0;
+}
+
+#companies{
+	float:left;
+	width:30%;
+	height:25em;
+	min-height:10em;
+	margin: 0 0 1% 0;
+}
+
+#content{
+	width:98%;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+#mainnav{
+	background-color: #FF6600;
+}
+
+.input{
+	float:right;
+	clear:both;
+	margin-bottom:0.2em;
+}
+
+#top a {
+	display: none;
+	visibility: hidden;
+}
+	
+nav ul li {
+	margin:0.4em 0.5%;
+}
+
+}
+
+@media screen and (max-width: 850px) {
+
+#mainnav{
+	background-color: #FF6666;
+}
+
+nav #small {
+
+	list-style-type: none;
+	position: absolute;
+	display:block;
+	width: 78%;
+	min-width:40em;
+	height:3em;
+	padding:0;
+	margin:0;
+}
+
+nav ul li {
+	margin:0.4em 2%;
+}
+
+
+nav #full {
+	display:none;
+}
+
+}
+
+@media screen and (max-width: 660px) {
+	
+#mainnav{
+	background-color: #00FFCC;
+}
+
+}
+/*breakpoints
+add media queries
+
+.input{
+	display:block;
+} 
+
+Hé Roos! Wat een leuke verassing :) Ja met mij gaat het goed, druk bezig met het laatste jaartje van mijn studie. 
+*/
+

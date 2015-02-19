@@ -1,0 +1,5 @@
+Tooltips- uitleg
+Selectable - elementen selecteren
+Sortable - lijsten sorteren met de muis
+Autocomplete - list suggestions (category)
+Higlight effect - hilight element duration of time
