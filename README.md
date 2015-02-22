@@ -1,2 +1,0 @@
-# kennistool
-kennistool git
