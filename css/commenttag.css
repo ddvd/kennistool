@@ -1,20 +1,26 @@
 div.tagsinput { 
-	padding:1px;
+	border:1px solid #CCC; 
+	background: #FFF; 
+	padding:3px; 
+	width:300px; 
+	height:60px; 
+	overflow-y: auto;
 }
 
 div.tagsinput span.tag { 
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 5px;
+	display: block; 
 	float: left; 
-	padding: 4px; 
-	text-decoration:none;
-	background-image:url(../img/edit1.png);
+	padding: 3px; 
+	text-decoration:none; 
+	background: #064885; 
 	color: #fff; 
 	margin-right: 5px; 
-	margin-bottom:6px;
+	margin-bottom:5px;
 	font-family: verdana;  
-	font-size:12px;
+	font-size:11px;
 }
 
 div.tagsinput span.tag a {
@@ -27,18 +33,18 @@ div.tagsinput input {
 	width:80px; 
 	margin:0px; 
 	font-family: helvetica; 
-	font-size: 12px; 
-
-	padding:1px; 
+	font-size: 13px; 
+	border:1px solid transparent; 
+	padding:5px; 
 	background: transparent; 
 	color: #000; 
-	border: 0.5px solid hsla(0,0%,80%,1);  
-	margin-right:10px; 
+	outline:0px;  
+	margin-right:5px; 
 	margin-bottom:5px; 
 }
 
 div.tagsinput div {
-	display:inline-block;
+	display:block;
 	float: left; 
 } 
 
@@ -52,5 +58,3 @@ div.tagsinput div {
 	background: #FBD8DB !important; 
 	color: #90111A !important;
 }
-
-

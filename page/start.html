@@ -8,7 +8,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
+<script src="../js/html5shiv.js"></script>
 <![endif]-->	
     
     <head>
@@ -16,26 +16,26 @@
         <title>kennistool</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-        <link href="css/normalize.css" rel="stylesheet" type="text/css">
-        <link href="css/global.css" rel="stylesheet" type="text/css">
-        <link href="css/imtech-theme/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css">
-        <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-        <link href="css/jquery.feedBackBox.css" rel="stylesheet" type="text/css">
-        <link href="css/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+        <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="../css/global.css" rel="stylesheet" type="text/css">
+        <link href="../css/imtech-theme/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.feedBackBox.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.tagsinput.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
         
     </head>
 
-
-    
     <body>
 
         	<header id="top">
-            	<a href="http://imtech.com/NL/corporate" target="_blank"><figure><img src="img/imtech_logo.jpg" alt="imtech logo"></figure></a>
+            	<a href="http://imtech.com/NL/corporate" target="_blank"><figure><img src="../img/imtech_logo.jpg" alt="imtech logo"></figure></a>
                 
                 <div id="login">
-                                    		<img id="identifierpic" src="img/icons/person.png">
+                		<img id="identifierpic" src="../img/icons/person.png">
                         <p id="identifiername"><a href="start.html">Diederik van Duuren</a></p>
+                		
+                        
                 </div>
                             
             </header>
@@ -46,7 +46,7 @@
             <nav class="">
             	<div id="allign">
 				<ul id="full">
-                	<li><a href="page/start.html">Start</a></li>
+                	<li><a href="start.html">Start</a></li>
                     <li><a href="#">Profile</a></li>
                    	<li><a href="#">Colleagues</a></li>
                     <li><a href="#">Projects</a></li>
@@ -57,9 +57,9 @@
                 	<li><a href="#">Menu</a></li>
                	</ul>                        
                         <div id="searchwrap">
-                        <form>
+                        <form action="../index.html">
                             <input type="text" name="searchfield" id="searchfield">
-                            <input type="button" name="searchbutton" id="searchbutton" value="Search" onclick="XX">
+                            <input type="submit" name="searchbutton" id="searchbutton" value="Search" onclick="XX">
                         </form>
                         </div>
 				</div>
@@ -81,19 +81,19 @@
                 	<ul class="filtul">  
                         <li>
                         <input type="checkbox"> 
-                        <img src="img/landen/be.png">
+                        <img src="../img/landen/be.png">
                         <label >Belgium</label> 
                         </li>
                         
                         <li >
                         <input type="checkbox"> 
-                        <img src="img/landen/de.png">
+                        <img src="../img/landen/de.png">
                         <label >Germany</label> 
                         </li>
                         
                         <li>
                         <input type="checkbox" checked> 
-                        <img src="img/landen/nl.png">
+                        <img src="../img/landen/nl.png">
                         <label >Netherlands</label> 
                             
                             <ul class="filtul">
@@ -113,24 +113,24 @@
                                 <input type="checkbox"> 
                                 <label >Emmen</label>
                                 </li>
-                                <li class="filt"><a href="#"><img class="more" src="img/landen/dwn.png"></a><li>
+                                <li class="filt"><a href="#"><img class="more" src="../img/landen/dwn.png"></a><li>
                             </ul>
                         </li>
                         
                         <li>
                         <input type="checkbox"> 
-                        <img src="img/landen/at.png">
+                        <img src="../img/landen/at.png">
                         <label >Austria</label> 
                         </li>
                               
                    
                         <li>
                         <input type="checkbox"> 
-                        <img src="img/landen/es.png">
+                        <img src="../img/landen/es.png">
                         <label >Spain</label> 
                         </li>
                         
-                        <li><a href="#"><img class="more" src="img/landen/dwn.png"></a></li>
+                        <li><a href="#"><img class="more" src="../img/landen/dwn.png"></a></li>
                 	</ul>                    
               	</div>
                 
@@ -187,77 +187,72 @@
               	</div>
 
             </div>  
+               	<script  type="text/javascript">
+				function clearField() {
+					
+				document.getElementById('txtArea').value='';
+				document.getElementById('vonkitem').style.display='block';
+				document.getElementById('newtag').style.display='none';
+				}
+				</script>
+                
+                
+        	<div id="key" class="blocks">
+            <h1 class="title">New Item</h1>
             
-            <div id="key" class="blocks">
-            <h1 class="title"> Keywords </h1>
-              
-              <a href="#" rel="2">Energie</a>
-              <a href="#" rel="4">Gebruik</a>
-              <a href="#" rel="3">User</a>
-              <a href="#" rel="1">Paneel</a>
-              <a href="#" rel="5"><u>Interface</u></a>
-              <a href="#" rel="4">Error</a>    
-              <a href="#" rel="2">Ervaring</a>
-              <a href="#" rel="6"><u>Interactie</u></a>
-              <a href="#" rel="1">Materiaal</a>
-              <a href="#" rel="9"><u>Interaction</u></a>
-              <a href="#" rel="1">Kennis</a>
-              <a href="#" rel="3">Tools</a>
-              <a href="#" rel="1"><u>Database design</u></a>
-              <a href="#" rel="6"><u>Experience</u></a>
-              <a href="#" rel="3">Design</a>
-              <a href="#" rel="6">Gebruiker</a>
-              <a href="#" rel="2">Test</a>
-              
-              
-<!--          <a href="#" rel="5">Ontwerp</a>
-			  <a href="#" rel="3">Product</a>
-              <a href="#" rel="1">Install</a>
-              <a href="#" rel="4">Systeem</a>-->
-              
-              
-            <!--Rechtsboven (keywords betrekking tot zoekopdracht) id="keywords"   Netwerk trefwoorden - onderwerpen dik -->
-
+            
+            	<div  id="new" >
+                    <textarea id="txtArea" rows="5" placeholder="What would you like to share?" style=" width: 93%; height:80px;" ></textarea>
+               	</div> 
+            
+               <div class="tagline">
+                           <form>
+                                <input type="button" class="commentbutton" name="commentbutton"  value="Send" style="margin-right:29px" onclick="clearField();">
+                                <input type="button" class="addfile" name="addfile" value="Add file +">
+                                <input type="button" class="tagbutton" name="tagbutton"  value="Tags:">
+                               <div id="newtag"> <input type="text"  class="tags_1" class="tags" value="" /></div>
+                           </form>
+               
+                </div>
+            
             </div>
-               	
-
+            
             
             <div id="personen" class="blocks">
             <h1 class="title">Colleagues</h1>
 
 	      		<ul class="userlist">
                     <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="#">Piet de Koning</a></div>
-                    </li>
-                    <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="#">Diederik van Duuren</a></div>
-                    </li>
-                    <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="#">Gerald de Jong</a></div>
-                    </li>
-                    
-                    <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="page/person.html">Jan Vertongen</a></div>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="person.html">Jan Vertongen</a></div>
                     </li>
                     <li>
 			        	
-                        <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                        <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                        	<div class="usertag"><a href="#">Peter Joritsma</a></div>
             
                     </li>
                     <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">Greald Henstra</a></div>
                     </li>
                     <li>
-                    	<div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">Jasper ter Hoeve</a></div>
                     </li>
-                                
+                    <li>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="#">Piet de Koning</a></div>
+                    </li>
+                    <li>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="#">Diederik van Duuren</a></div>
+                    </li>
+                    <li>
+                    	<div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="#">Gerald de Jong</a></div>
+                    </li>
+                                 
                 </ul>
           
             </div>
@@ -313,20 +308,25 @@
             
             	<ul id="itemlist">
                 
-                                	<li class="item">
+                <div id="vonkitem">
+                	<li id="broad" class="item">
                     	<div class="metablock">
                     	   	<div class="usertag">
-                                <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                                 <div class="usertag"><a href="#">Diederik van Duuren</a></div>
                             </div>
-								<div class="to">--></div> 	
+                            	<div class="to">--></div> 	
                             <div class="clientname">
-                                <div class="clientname"><a href="#">PrevaldV</a></div>
+                                <div class="clientname"><a href="person.html">Jan Vertongen</a></div>
+                            </div>
+									
+                            <div class="clientname">
+                                <div class="clientname"><a href="#"></a></div>
                             </div>
                         </div>
                         
                         <div class="contentblock">
-                        	"But I must <u>explain</u> to you how all this mistaken idea to complete <u>account</u> of the <u>system</u>, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+                        <u>Vonk</u> lunch item! <u>@Jan Vertongen</u>
                         </div>
                         
                         <div class="tagline">
@@ -334,38 +334,16 @@
                                 <input type="button" class="commentbutton" name="commentbutton"  value="Comment" onclick="document.getElementById('comment3').style.display='block'" onDblClick="document.getElementById('comment3').style.display='none'">
                                 <input type="button" class="addfile" name="addfile" value="Add file +">
                                 <input type="button" class="tagbutton" name="tagbutton"  value="Tags:">
-                                <input type="text" class="tags_1" class="tags" value="ICT, Feedback, Usertest, Joran van Laren, GHvernuft" />
+                                <input type="text" class="tags_1" class="tags" value="vonk, pasen" />
                             </form>
                         </div>
-                     
-     					<div  id="comment3" class="commentnew"><div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                            <div class="usertag"><a href="#">Diederik van Duuren</a></div> 
-                            <textarea rows="4" placeholder="Comment on Item.." style=" width: 98%;" ></textarea>
-                            <input type="button" class="sentcomment" name="sendcomment" value="Send">
-                       </div> 
-                        
-                        
-                        <div class="comment">
-                                <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                                <div class="usertag"><a href="#">Joran van Laren</a></div>
-                                <div class="commentblock"> 
-                                    complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. But I must explain to you how all this mistaken idea 
-                                </div>
-                       </div> 
-                       
-                        <div class="comment">
-                                <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
-                                <div class="usertag"><a href="#">Ewoud van leeuwen</a></div>
-                                <div class="commentblock"> 
-                                    explain to you how all this mistaken idea of denouncing
-                                </div>
-                       </div>        
-                    </li>   
-                    
+                    </li>
+                	</div>
+                
                 	<li class="item">
                     	<div class="metablock">
                     	   	<div class="usertag">
-                                <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                                 <div class="usertag"><a href="#">Peter Joritsma</a></div>
                             </div>
 								<div class="to">--></div> 	
@@ -375,7 +353,7 @@
                         </div>
                         
                         <div class="contentblock">
-                        	"But I must explain to you how all this mistaken idea to complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+                        	"But I must <u>explain</u> to you how all this mistaken idea to complete <u>account</u> of the <u>system</u>, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
                         </div> 
                         
                         
@@ -390,7 +368,7 @@
                        
                         </div>
                         
-     					<div  id="comment1" class="commentnew"><div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+     					<div  id="comment1" class="commentnew"><div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                             <div class="usertag"><a href="#">Diederik van Duuren</a></div> 
                             <textarea rows="4" placeholder="Comment on Item.." style=" width: 98%;" ></textarea>
                             <input type="button" class="sentcomment" name="sendcomment" value="Send">
@@ -398,7 +376,7 @@
 
                                                          
                         <div class="comment">
-                            <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                            <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                             <div class="usertag"><a href="#">Greald Henstra</a></div>
                             <div class="commentblock"> 
                             	But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will.
@@ -409,7 +387,7 @@
                 	<li class="item">
                     	<div class="metablock">
                     	   	<div class="usertag">
-                                <div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                                 <div class="usertag"><a href="#">Ewoud van Leeuwen</a></div>
                             </div>
 								<div class="to">--></div> 	
@@ -432,7 +410,7 @@
                        
                         </div>
                         
-     					<div  id="comment2" class="commentnew"><div class="userimg"><img src="img/user_blue.png" alt="user"></div>
+     					<div  id="comment2" class="commentnew"><div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
                             <div class="usertag"><a href="#">Diederik van Duuren</a></div> 
                             <textarea rows="4" placeholder="Comment on Item.." style=" width: 98%;" ></textarea>
                             <input type="button" class="sentcomment" name="sendcomment" value="Send">
@@ -440,7 +418,54 @@
               
                     </li>   
 
-         
+                	<li class="item">
+                    	<div class="metablock">
+                    	   	<div class="usertag">
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                                <div class="usertag"><a href="#">Diederik van Duuren</a></div>
+                            </div>
+								<div class="to">--></div> 	
+                            <div class="clientname">
+                                <div class="clientname"><a href="#">PrevaldV</a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="contentblock">
+                        	"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+                        </div>
+                        
+                        <div class="tagline">
+							<form>
+                                <input type="button" class="commentbutton" name="commentbutton"  value="Comment" onclick="document.getElementById('comment3').style.display='block'" onDblClick="document.getElementById('comment3').style.display='none'">
+                                <input type="button" class="addfile" name="addfile" value="Add file +">
+                                <input type="button" class="tagbutton" name="tagbutton"  value="Tags:">
+                                <input type="text" class="tags_1" class="tags" value="ICT, Feedback, Usertest, Joran van Laren, GHvernuft" />
+                            </form>
+                        </div>
+                     
+     					<div  id="comment3" class="commentnew"><div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                            <div class="usertag"><a href="#">Diederik van Duuren</a></div> 
+                            <textarea rows="4" placeholder="Comment on Item.." style=" width: 98%;" ></textarea>
+                            <input type="button" class="sentcomment" name="sendcomment" value="Send">
+                       </div> 
+                        
+                        
+                        <div class="comment">
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                                <div class="usertag"><a href="#">Joran van Laren</a></div>
+                                <div class="commentblock"> 
+                                    complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. But I must explain to you how all this mistaken idea 
+                                </div>
+                       </div> 
+                       
+                        <div class="comment">
+                                <div class="userimg"><img src="../img/user_blue.png" alt="user"></div>
+                                <div class="usertag"><a href="#">Ewoud van leeuwen</a></div>
+                                <div class="commentblock"> 
+                                    explain to you how all this mistaken idea of denouncing
+                                </div>
+                       </div>        
+                    </li>            
                 </ul>
             </div>
             
@@ -448,36 +473,35 @@
             <div id="projects" class="blocks">
            	<h1 class="title"> Projects </h1>
            		<ul class="projectlist">
-
+                
               		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
-                    	<div class="clientname"><a href="#">Gas Alteration</a></div>
-                    </li>
-             		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
-                    	<div class="clientname"><a href="#">GOV Rugulations</a></div>
-                    </li>
-                    <li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
-                    	<div class="clientname"><a href="#">Force Control</a></div>
-                    </li>                
-              		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
                     	<div class="clientname"><a href="#">Light Systems</a></div>
                     </li>
               		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
                     	<div class="clientname"><a href="#">Oil install Gabon</a></div>
                     </li>
               		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
                     	<div class="clientname"><a href="#">Pump Innovation</a></div>
                     </li>
               		<li>
-                    	<div class="clientimg"><img src="img/project_blue.png" alt="client"></div>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
                     	<div class="clientname"><a href="#">Field Mapping</a></div>
                     </li>
-
+              		<li>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
+                    	<div class="clientname"><a href="#">Gas Alteration</a></div>
+                    </li>
+             		<li>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
+                    	<div class="clientname"><a href="#">GOV Rugulations</a></div>
+                    </li>
+                    <li>
+                    	<div class="clientimg"><img src="../img/project_blue.png" alt="client"></div>
+                    	<div class="clientname"><a href="#">Force Control</a></div>
+                    </li>
 
                 </ul>
 			
@@ -489,36 +513,35 @@
 
 	      		<ul class="userlist">
                     <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="#">Ducor Petrochemicals</a></div>
-                    </li>
-                    <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
-                    	<div class="usertag"><a href="#">Rabobank</a></div>
-                    </li>
-                    <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">Philips Eindhoven</a></div>
                     </li>
                     <li>
 			        	
-                        <div class="userimg"><img src="img/company_blue.png" alt="user"></div>
+                        <div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
                        	<div class="usertag"><a href="#">Grundfoss DK</a></div>
             
                     </li>
                     <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">Royal Shell </a></div>
                     </li>
                     <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">AMC Amsterdam</a></div>
                     </li>
                     <li>
-                    	<div class="userimg"><img src="img/company_blue.png" alt="user"></div>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
                     	<div class="usertag"><a href="#">Hyproca Lyempf</a></div>
                     </li>
-
+                    <li>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="#">Ducor Petrochemicals</a></div>
+                    </li>
+                    <li>
+                    	<div class="userimg"><img src="../img/company_blue.png" alt="user"></div>
+                    	<div class="usertag"><a href="#">Rabobank</a></div>
+                    </li>
                                  
                 </ul>
 
@@ -563,13 +586,13 @@
                 </div>
        		</footer> 
         
-	<script src="js/jquery-1.9.0.js"></script>
-  	<script src="js/jquery-ui-1.10.1.custom.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>	
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/jquery.tagcloud.js"></script>
-	<script src="js/jquery.feedBackBox.js"></script>
-	<script src="js/jquery.tagsinput.js"></script>
+	<script src="../js/jquery-1.9.0.js"></script>
+  	<script src="../js/jquery-ui-1.10.1.custom.js"></script>
+	<script src="../js/jquery.mousewheel.min.js"></script>	
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/jquery.tagcloud.js"></script>
+	<script src="../js/jquery.feedBackBox.js"></script>
+	<script src="../js/jquery.tagsinput.js"></script>
 
 <script type="text/javascript">
 

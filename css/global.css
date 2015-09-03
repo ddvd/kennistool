@@ -28,6 +28,25 @@ header {
 	display:inline;
 }
 
+#identifiername{
+	float:right;
+	display:inline-block;
+	margin: 0.2em 0.5em 0 0;
+}
+
+#identifiername a{
+	color:#064885;
+	text-decoration:none;
+}
+
+#identifierpic{
+	float:right;
+	margin:0;
+	height:30px;
+	width:30px;
+}
+
+
 #mainnav{
 	position:absolute;
 	width: 100%;
@@ -120,6 +139,14 @@ input#searchbutton{
 	color:#FFFFFF;
 }
 
+#absolute{
+	position:absolute;
+	height:79em;
+	width:100%;
+	background-image:url(../img/edit1.png);
+	opacity:0.8;
+	z-index:9999;
+}
 
 #container {
 	width: 76%;
@@ -140,8 +167,12 @@ input#searchbutton{
 	-moz-border-radius: 0.8em;
 	border-radius: 0.8em;
 	padding: 1%;
-	background-color:  #FFF/*hsla(218, 7%, 51%, 0.5)*/;
+	background-color:  #FFF;
 	overflow:auto;
+	box-shadow: inset 0px -2px 12px -2px #ABABAB,-6px 3px 17px -4px #6B6B6B;
+	-webkit-box-shadow: inset 0px -2px 12px -2px #ABABAB,-6px 3px 17px -4px #6B6B6B;
+	-moz-box-shadow: inset 0px -2px 12px -2px #ABABAB,-6px 3px 17px -4px #6B6B6B;
+	-o-box-shadow: inset 0px -2px 12px -2px #ABABAB,-6px 3px 17px -4px #6B6B6B; 
 }
 
 .blocks ul {
@@ -154,6 +185,11 @@ input#searchbutton{
 	font-size:1.2em;
 	color:#064885;
 	text-decoration:none;
+}
+
+.blocks a:hover{
+	color:#064885;
+	text-decoration:underline;
 }
 
 div .userimg  {
@@ -195,8 +231,50 @@ div .clientname a {
 #filter{
 	float:left; 
 	width:15%;
-	min-height:25em;
+	height:25em;
 	margin:0 1% 0 0;
+}
+
+#location{
+	font-weight:bold;
+	font-size:1.2em;
+	margin:0.2em 0;
+}
+
+#time{
+	font-weight:bold;
+	font-size:1.2em;
+	margin:0.2em 0;
+}
+
+#bu{
+	font-weight:bold;
+	font-size:1.2em;
+	margin:0.2em 0;
+}
+
+.filtul{
+	font-size:0.9em;
+}
+
+.filt{
+	margin-left:1.5em;
+}
+
+img.more{
+	padding-left:3em;
+}
+
+#foto{
+	float:left;
+	height:10em;
+	width:25%;
+}
+
+#info{
+	float:left;
+	height:10em;
+	width:75%;
 }
 
 #tags2{
@@ -252,22 +330,18 @@ div .clientname a {
 }
 
 #itemlist .item {
-	background-image: url(../img/edit_back4.png);
-	background-repeat: repeat;
-	padding:2em;
-	margin-bottom: 2em;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	
+	display: inline-block;
+	left:65em;
+	margin: 0 0 2em 1em;
+	border-bottom: hsla(0,0%,60%,1) 1px solid;
 }
+
+
 
 .metablock{
 	display:block;
 	height:auto;
 	margin-bottom:1em;
-	background-image: none;
-	background-repeat:repeat;
 	-webkit-border-top-left-radius: 12px;
 	-webkit-border-top-right-radius: 12px;
 	-moz-border-radius-topleft: 12px;
@@ -290,14 +364,96 @@ div .clientname a {
 	margin-bottom:1em;
 }
 
-div .comment{
-	margin: 0 0 1em 50px;
+.tagline{  
+	display:inline-block;
+	margin-bottom:0.5em;
+	width: 100%;
+}
+
+.tagbutton {
+	display:block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 5px;
+	float: left; 
+	padding: 3px; 
+	text-decoration:none; 
+	background: #064885; 
+	color: #fff; 
+	margin-right: 5px; 
+	margin-bottom:5px;
+	font-family: verdana;  
+	font-size:12px;
+}
+
+.commentbutton {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 5px;
+	float: right; 
+	padding: 3px; 
+	text-decoration:none; 
+	background: #064885; 
+	color: #fff; 
+	margin-left: 5px; 
+	margin-bottom:5px;
+	margin-right:4px;
+	font-family: verdana;  
+	font-size:12px;
+}
+
+.addfile {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 5px;
+	float: right; 
+	padding: 3px; 
+	text-decoration:none; 
+	background: #064885; 
+	color: #fff; 
+	margin-left: 5px; 
+	margin-bottom:5px;
+	font-family: verdana;  
+	font-size:12px;
+}
+
+.confirmtag{
+	display:block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 5px;
+	float: right; 
+	padding: 3px; 
+	text-decoration:none; 
+	background: #064885; 
+	color: #fff; 
+	margin-right: 5px; 
+	margin-bottom:5px;
+	font-family: verdana;  
+	font-size:12px;
+}
+
+
+.comment{
+	margin: 0 0 1.5em 50px;
+	display: inline-block;
+}
+
+.commentnew{
+	margin: 0.2em 0 0.2em 50px;
+	display: none;
+}
+
+#vonkitem{
+	display:none;
+}
+
+#broad{
+	width:98%;
 }
 
 .commentblock{
 	display:inline-block;
-	background-image: none;
-	background-repeat:repeat;
 	-webkit-border-bottom-right-radius: 12px;
 	-webkit-border-bottom-left-radius: 12px;
 	-moz-border-radius-bottomright: 12px;
@@ -306,12 +462,31 @@ div .comment{
 	border-bottom-left-radius: 12px;
 }
 
+.sentcomment{
+	display:block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 5px;
+	float: right; 
+	padding: 3px; 
+	top:-10px;
+	text-decoration:none; 
+	background: #064885; 
+	color: #fff; 
+	margin-left: 5px; 
+	margin-bottom:5px;
+	font-family: verdana;  
+	font-size:12px;
+}
+
 footer{
-	font-size:1.1em;
+	font-size:1.1em;	
+	font-weight:bold;
 	width: 78%;
 	height: 6em;
 	margin:0.5em auto;
 	color: hsla(0,0%,100%,1);
+	background-image:url(../img/edit1.png);
 }
 
 .foot {
@@ -321,7 +496,6 @@ footer{
 	height: 4em;
 	padding: 2%;
 	text-align:center;
-	background-image:url(../img/edit1.png);
 	color: #064885;
 }
 
@@ -342,10 +516,11 @@ footer{
 }
 
 
+
 @media screen and (max-width: 1200px) {
 	
 #mainnav{
-	background-color:#FF3333
+	background-color:#064885;
 }
 
 #filter{
@@ -394,7 +569,7 @@ nav ul li {
 	
 	
 #mainnav {
-	background:#FFCC00;
+	background-color:#064885;
 }
 
 nav ul li {
@@ -443,12 +618,18 @@ nav ul li {
 	width:98%;
 }
 
+#foto{
+	float:left;
+	height:10em;
+	width:25%;
+}
+
 }
 
 @media screen and (max-width: 900px) {
 
 #mainnav{
-	background-color: #FF6600;
+	background-color:#064885;
 }
 
 .input{
@@ -471,7 +652,7 @@ nav ul li {
 @media screen and (max-width: 850px) {
 
 #mainnav{
-	background-color: #FF6666;
+	background-color:#064885;
 }
 
 nav #small {
@@ -500,17 +681,8 @@ nav #full {
 @media screen and (max-width: 660px) {
 	
 #mainnav{
-	background-color: #00FFCC;
+	background-color:#064885;
 }
 
 }
-/*breakpoints
-add media queries
-
-.input{
-	display:block;
-} 
-
-Hé Roos! Wat een leuke verassing :) Ja met mij gaat het goed, druk bezig met het laatste jaartje van mijn studie. 
-*/
 
